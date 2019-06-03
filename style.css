@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;   
+    background-color: gray;
+    background: gray;
+}
+
+.placeholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.board {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .red, .blue, .green, .yellow, .white{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.white{
+    background-color: white;
+}
+
+.counter {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    cursor: pointer;
+}
