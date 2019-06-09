@@ -91,7 +91,7 @@ const drench = () => {
             id = parseInt(start[j].id);
 
 
-            if  (board[rightOne] != undefined && (rightOne != 10 || rightOne != 20 || rightOne != 30 || rightOne != 40 ||rightOne != 50 || rightOne != 60 || rightOne != 70 || rightOne != 80 ||rightOne != 90)) {
+            if  (board[rightOne] != undefined && (rightOne != 10 || rightOne != 20 || rightOne != 30 || rightOne != 40 ||rightOne != 50 || rightOne != 60 || rightOne != 70 || rightOne != 80 || rightOne != 90)) {
                 if (parseInt(board[rightOne].id) == id + 1) {
                     if (board[rightOne].style.backgroundColor == start[0].style.backgroundColor) {
                         if (start.includes(board[rightOne]) == false) {
@@ -146,7 +146,7 @@ addEventListener("DOMContentLoaded", () => {
         for (let index = 0; index < start.length; index++) {
             start[index].style.backgroundColor = "blue";
         }
-        
+        drench();
     });
 
     document.querySelector(".buttons .green").addEventListener("click", () => {
@@ -155,8 +155,7 @@ addEventListener("DOMContentLoaded", () => {
         for (let index = 0; index < start.length; index++) {
             start[index].style.backgroundColor = "green";
         }
-        
-
+        drench();
     });
 
     document.querySelector(".buttons .red").addEventListener("click", () => {
@@ -165,7 +164,7 @@ addEventListener("DOMContentLoaded", () => {
         for (let index = 0; index < start.length; index++) {
             start[index].style.backgroundColor = "red";
         }
-        
+        drench();
     });
 
     document.querySelector(".buttons .yellow").addEventListener("click", () => {
@@ -174,7 +173,7 @@ addEventListener("DOMContentLoaded", () => {
         for (let index = 0; index < start.length; index++) {
             start[index].style.backgroundColor = "yellow";
         }
-        
+        drench();
     });
 
     document.querySelector(".buttons .white").addEventListener("click", () => {
@@ -183,7 +182,7 @@ addEventListener("DOMContentLoaded", () => {
         for (let index = 0; index < start.length; index++) {
             start[index].style.backgroundColor = "white";
         }
-        
+        drench();
     });
 
     document.querySelector(".counter").addEventListener("click", () => {
